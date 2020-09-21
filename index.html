@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+    <!-- Load Scrips -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src='vendor/opencv.js'></script>
+    <script src='scripts/canvasDrawing.js'></script>
+    <script src='scripts/processing.js'></script>
+</head>
+
+<body>
+    <canvas id='my-canvas' width="900" height="300"></canvas>
+    <button id='submitButton' class='btn' value='Check'>Check Answer</button>
+
+    <script>
+        loadTFModel();
+        prepareCanvas();
+
+        document.getElementById('submitButton').addEventListener('click', function () {
+            predictImage()
+        });
+    </script>
+
+</body>
+
+</html>
