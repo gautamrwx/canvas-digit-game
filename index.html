@@ -9,18 +9,28 @@
     <script src='vendor/opencv.js'></script>
     <script src='scripts/canvasDrawing.js'></script>
     <script src='scripts/processing.js'></script>
+    <script src="scripts/math.js"></script>
 </head>
 
 <body>
-    <canvas id='my-canvas' width="900" height="300"></canvas>
+
+    <h1 id='title'>Canvas Digit Game</h1>
+
+    <h2 id='question'><span id='n1'>_</span> + <span id='n2'>_</span> = </h2>
+
     <button id='submitButton' class='btn' value='Check'>Check Answer</button>
+
+    <canvas id='my-canvas' width="900" height="300"></canvas>
 
     <script>
         loadTFModel();
         prepareCanvas();
+        generateQuestion();
 
         document.getElementById('submitButton').addEventListener('click', function () {
-            predictImage()
+            verifyAnswer();
+            clearCanvas();
+            generateQuestion();
         });
     </script>
 

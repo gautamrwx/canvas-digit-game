@@ -98,5 +98,5 @@ function predictImage() {
     X.dispose();
     result.dispose();
 
-    console.log(output);
+    return output;
 }
