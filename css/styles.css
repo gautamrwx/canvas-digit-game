@@ -18,7 +18,7 @@ body {
 
 .hero-image {
     margin: 0 auto;
-    background-image: url("/images/wood-frame.png");
+    background-image: url("../images/wood-frame.png");
     height: 386px;
     width: 499px;
     background-position: center;
