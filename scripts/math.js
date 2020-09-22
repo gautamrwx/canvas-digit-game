@@ -2,7 +2,7 @@
 var answer;
 var score = 0;
 
-function generateQuestion(){
+function generateQuestion() {
     const n1 = Math.floor(Math.random() * 5);
     document.getElementById('n1').innerHTML = n1;
 
@@ -16,10 +16,14 @@ function verifyAnswer() {
 
     if (prediction == answer) {
         score++;
-        console.log(`Correct! Score: ${score}`);
+        document.getElementById('up-down-image').src='./images/up-green.png'
     }
     else {
         score--;
-        console.log(`Incorrect! Score: ${score}`);
+        document.getElementById('up-down-image').src='./images/down-red.png'
     }
+
+    console.log(score)
+    document.getElementById('score').innerHTML = score
+
 }

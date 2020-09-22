@@ -1,0 +1,84 @@
+@font-face {
+    font-family: chalkFont;
+    src: url('../fonts/Better-Sweet.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    margin: 0;
+    min-height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+    margin: 0 auto;
+    background-image: url("/images/wood-frame.png");
+    height: 386px;
+    width: 499px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#my-canvas {
+    position: relative;
+    top: 65px;
+    left: 75px;
+}
+
+#header {
+    padding: 0px 30px;
+    background:#0d0d0d;
+    color:#bfbfbf;
+}
+
+#title {
+    display: inline-block;
+}
+
+#score-board {
+    float: right;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+
+#question {
+    text-align: center;
+    font-size: 55px;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-family: chalkFont;
+}
+#score{
+    font-weight: bold;
+}
+
+#button {
+    text-align: center;
+    padding: 5px 5px;
+}
+
+#up-down-image{
+    height:25px;
+    margin-left: 20px;
+}
+
+#submitButton{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
