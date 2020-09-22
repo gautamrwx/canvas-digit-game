@@ -20,7 +20,7 @@
         <h1 id='title'>Canvas Digit Game</h1>
         <div id="score-board">
             <span>Total Score : </span><span id="score">0</span>
-            <img id="up-down-image"/>
+            <img id="up-down-image" />
         </div>
     </div>
 
@@ -34,13 +34,16 @@
 
     <div id="button">
         <button id='submitButton' class='btn' value='Check'>Check Answer</button>
+        <button id='ClearButton' class='btn' value='Clear'>Clear</button>
     </div>
 
     <script>
         loadTFModel();
         prepareCanvas();
         generateQuestion();
-
+        document.getElementById('ClearButton').addEventListener('click', function () {
+            clearCanvas();
+        });
         document.getElementById('submitButton').addEventListener('click', function () {
             verifyAnswer();
             clearCanvas();
